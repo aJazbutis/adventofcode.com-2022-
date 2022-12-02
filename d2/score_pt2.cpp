@@ -7,7 +7,6 @@ int	main(int argc, char **argv)	{
 	std::string		line;
 	int res = 0;
 	while (std::getline(ifs, line))	{
-			std::cout << line << std::endl;
 		switch (line[2])	{
 			case (88):
 				switch (line[0])	{
