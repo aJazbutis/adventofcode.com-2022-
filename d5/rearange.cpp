@@ -35,9 +35,8 @@ int	main(int argc, char **argv)	{
 			line = line.substr(sz + 3);
 			to = std::stoi(line, &sz) - 1; 
 			while (moves--)	{
-				char temp = stack[from].top();
+				stack[to].push(stack[from].top());
 				stack[from].pop();
-				stack[to].push(temp);
 			}		
 		}
 	}

@@ -36,13 +36,11 @@ int	main(int argc, char **argv)	{
 			to = std::stoi(line, &sz) - 1; 
 			std::stack<char> crane;
 			while (moves--)	{
-				char temp = stack[from].top();
+				crane.push(stack[from].top());
 				stack[from].pop();
-				crane.push(temp);
 			}		
 			while (crane.size())	{
-				char temp = crane.top();
-				stack[to].push(temp);
+				stack[to].push(crane.top());
 				crane.pop();
 			}
 		}
