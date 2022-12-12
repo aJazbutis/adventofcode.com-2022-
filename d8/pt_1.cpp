@@ -7,7 +7,6 @@ int	main(int argc, char **argv)	{
 	std::string		line;
 	std::vector<std::string> map;
 
-	int	max = -1;
 	while (std::getline(ifs, line))
 		map.push_back(line);
 	ifs.close();
